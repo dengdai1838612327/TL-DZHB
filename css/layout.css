@@ -1,0 +1,239 @@
+﻿@charset "utf-8";
+/*交易记录*/
+.price_box {
+	width: 100%;
+	padding-bottom: 10px;
+	background: #4BB1DF;
+	margin-bottom: 10px;
+}
+.price_box h3 {
+	text-align: center;
+	font-size: 14px;
+	color: #D7F2FF;
+	margin-bottom: 10px;
+}
+.price_rmb, .price_usd {
+	overflow: hidden;
+	margin-bottom: 5px;
+	color: #fff;
+	line-height: 38px;
+}
+.price_rmb label, .price_usd label {
+	width: 38%;
+	float: left;
+	text-align: right;
+	font-size: 14px;
+}
+.price_rmb p, .price_usd p {
+	width: 60%;
+	float: left;
+	padding-left: 2%;
+	overflow: hidden;
+	font-size: 20px;
+}
+.price_rmb p span, .price_usd p span {
+	float: left;
+	font-size: 25px;
+}
+.section {
+	background: #fff;
+	margin-bottom: 10px;
+}
+.section .h3 {
+	height: 45px;
+	line-height: 45px;
+	border-bottom: 1px solid #ededed;
+	padding: 0 12px 0 15px;
+}
+.section .h3 span {
+	width: 40%;
+	float: left;
+	background: url(../images/1_r2_c4.png) no-repeat scroll 0 center / 13px 15px;
+	font-size: 15px;
+	padding-left: 22px;
+}
+.section .h3 a {
+	float: right;
+}
+.jl_list {
+	margin-left: 10px;
+	border-bottom: 1px solid #ededed;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.jl_list dl {
+	width: 70%;
+	float: left;
+	font-size: 13px;
+}
+.jl_list dl dt {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.jl_list dl dd {
+	color: #FF5329;
+}
+.jl_list span {
+	float: right;
+	text-align: right;
+	font-size: 13px;
+	color: #666;
+	padding-right: 12px;
+}
+.section .h3 span.pj {
+	width: 40%;
+	float: left;
+	background: url(../images/1_r1_c1.png) no-repeat scroll 0 center / 18px 18px;
+	font-size: 15px;
+	padding-left: 22px;
+}
+.hl_ul {
+	padding: 15px 0;
+}
+.hl_ul li {
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+	color: #FF5329;
+	font-size: 22px;
+}
+.hl_ul li span, .hl_ul li em {
+	float: left;
+}
+.hl_ul li span.hl_left {
+	width: 45%;
+	text-align: right;
+}
+.hl_ul li span.hl_rt {
+	width: 45%;
+}
+.hl_ul li em {
+	width: 10%;
+	height: 30px;
+	text-align: center;
+	background: url(../images/1_r5_c3.png) center center no-repeat;
+	background-size: 14px 12px;
+}
+.hl_p {
+	color: #666;
+	margin: 0 0 0 15px;
+}
+.jr_list {
+	padding-bottom: 10px;
+}
+.btns {
+	width: 100%;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+}
+.btns a {
+	float: left;
+	text-align: center;
+	display: block;
+	background: #fff;
+	width: 50%;
+	height: 100%;
+	color: #4BB1DF;
+}
+.btns a.cur {
+	color: #fff;
+	background: #4BB1DF;
+}
+#bg-gray {
+	background-color: #333;
+	display: none;
+	left: 0;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	-moz-opacity: .7;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	right: 0;
+	bottom: 0;
+}
+.sel-modal {
+	display: none;
+	box-sizing: border-box;
+	width: 80%;
+	height: 240px;
+	position: fixed;
+	left: 50%;
+	background-color: #fff;
+	z-index: 201;
+	margin-left: -40%;
+	margin-top: -120px;
+	top: 50%;
+	border-radius: 4px;
+	overflow:hidden;
+}
+.sel-top {
+	height: 40px;
+	position: relative;
+	line-height: 40px;
+}
+.sel-modal .h4 {
+	width: 200px;
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.name_list {
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 155px;
+    overflow-y: scroll;
+    padding: 0 15px;
+    width: 100%;
+}
+.name_list li {
+	border-bottom: 1px solid #ccc;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+.name_list li:last-child {
+	border-bottom: none;
+}
+.name_list li.cur {
+	color: #3995FD;
+}
+.name_list li.cur i {
+	background: url(../images/1_r3_c1.png) 0 0 no-repeat;
+	background-size: 14px 10px;
+	height: 10px;
+	position: absolute;
+	right: 10px;
+	top: 12px;
+	width: 14px;
+	z-index: 1;
+}
+.sel-btn {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+.sel-btn .btn {
+	background: none;
+	width: 50%;
+	text-align: center;
+	border: none;
+	color: #3995FD;
+	font-size: 15px;
+	height: 45px;
+	line-height: 45px;
+	box-sizing:border-box;
+	float:left;
+}
+.sel-btn .qx_btn {
+	color: #333;
+	border-left:1px solid #ccc;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<header>
+  <h2>张三</h2>
+  <a href="###" class="mx_a">交易明细</a> </header>
+<div class="content" style=" padding-bottom:50px;">
+  <div class="price_box">
+    <h3>总金额</h3>
+    <div class="price_rmb">
+      <label>人民币：</label>
+      <p><span>500.00</span><em>RMB</em></p>
+    </div>
+    <div class="price_usd">
+      <label>美元：</label>
+      <p><span>75.5572</span><em>$</em></p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="h3"> <span>交易记录</span> <a href="###">更多交易&gt;&gt;</a> </div>
+    <div class="jl_list">
+      <dl>
+        <dt>二五</dt>
+        <dd>转入到账户 ￥8999.99</dd>
+      </dl>
+      <span class="date">12月12号</span> </div>
+    <div class="jl_list">
+      <dl>
+        <dt>八万</dt>
+        <dd>转入到账户 ￥8999.99</dd>
+      </dl>
+      <span class="date">12月12号</span> </div>
+  </div>
+  <div class="section">
+    <div class="h3"> <span class="pj">今日牌价</span> <a href="###">更多汇率信息&gt;&gt;</a> </div>
+    <div class="jr_list">
+      <ul class="hl_ul">
+        <li><span class="hl_left">1.00 CNY</span><em></em><span class="hl_rt">$&nbsp;0.1513</span></li>
+        <li><span class="hl_left">1.00 USD</span><em></em><span class="hl_rt">￥6.6081</span></li>
+      </ul>
+      <p class="hl_p">数据仅供参考<br />
+        按转账时实时汇率为准</p>
+    </div>
+  </div>
+  <div class="btns"> <a onclick="return goods_sel();" class="cur" href="###">转账</a> <a href="###">充值</a> </div>
+</div>
+<div id="bg-gray" ></div>
+<div class="sel-modal" style="display: none;">
+  <div class="sel-top"> <i class="sprites close"></i>
+    <p class="h4">选择联系人</p>
+  </div>
+  <div class="name_list">
+    <ul>
+      <li class="cur">张三<i></i></li>
+      <li>李四<i></i></li>
+      <li>王五<i></i></li>
+      <li>李四<i></i></li>
+      <li>王五<i></i></li>
+      <li>李四<i></i></li>
+      <li>王五<i></i></li>
+    </ul>
+  </div>
+  <div class="sel-btn">
+    <input value="确定" class="btn" type="button">
+    <input value="取消" class="btn qx_btn" type="button">
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script>
+function goods_sel() {
+  var bggray = $("#bg-gray");
+  var modal = $(".sel-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}</script>
+</body>
+</html>
