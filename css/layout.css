@@ -232,8 +232,348 @@
 	line-height: 45px;
 	box-sizing:border-box;
 	float:left;
+	border-radius: 0;
 }
 .sel-btn .qx_btn {
 	color: #333;
 	border-left:1px solid #ccc;
+}
+/*交易记录列表*/
+.search-box{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.search-box i.search-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -7px;
+	margin-left: -35px;
+	width: 14px;
+	height: 14px;
+	background: url(../images/search-icon.png) 0 0 no-repeat;
+	background-size: 14px 14px;
+}
+.search-box input{
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	font-size: 14px;
+}
+.month-box h5{
+	font-size: 14px;
+	color: #666;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.month-box ul{
+	padding-left: 10px;
+	background-color: #fff;
+}
+.month-box ul li{
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+	padding: 10px 10px 10px 0;
+	font-size: 14px;
+	height: 65px;
+}
+.month-box ul li:last-child{
+	border-bottom: none;
+}
+.month-box ul li .trade-icon{
+	float: left;
+	width: 21px;
+	height: 21px;
+	margin: 12px 0;
+}
+.month-box ul li .trade-icon.change{
+	background: url(../images/11_r1_c2.png) no-repeat;
+	background-size: 21px 21px;
+}
+.month-box ul li .trade-icon.refill{
+	background: url(../images/11_r3_c1.png) no-repeat;
+	background-size: 21px 21px;
+}
+.month-box .trade-mid{
+	float: left;
+	width: 50%;
+	margin-left: 8px;
+}
+.month-box .trade-mid .name{
+	font-size: 15px;
+	line-height: 25px;
+	width: 100%;
+	overflow: hidden;
+	overflow-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.month-box .trade-mid .time{
+	color: #666;
+	line-height: 20px;
+	width: 100%;
+	overflow: hidden;
+	overflow-wrap: normal;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.month-box .trade-num{
+	float: right;
+	width: 40%;
+	text-align: right;
+	overflow: hidden;
+}
+.month-box .trade-num span{
+	font-size: 15px;
+	line-height: 25px;
+}
+/*联系人交易详情*/
+.record_head {
+	background: #fff;
+	font-size: 16px;
+	padding: 20px 15px;
+	margin: 10px 0 0;
+}
+.record_head h3 {
+	margin-bottom: 5px;
+}
+.record_text p{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	font-size: 14px;
+	color: #666;
+}
+.record_text .text-con{
+	background-color: #fff;
+	padding-left: 15px;
+	font-size: 15px;
+	border-bottom: 1px solid #ddd;
+}
+.text-con .sel{
+	border-bottom: 1px solid #ddd;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+}
+.text-con .sel label{
+	float: left;
+}
+.text-con .sel select{
+	float: right;
+	background-color: transparent;
+	direction: rtl;
+	color: #666;
+	height: 45px;
+	line-height: 45px;
+	padding-right: 30px;
+}
+.text-con .sel select.blue{
+	color: #4BB1DF;
+}
+.icon-right{
+	position: absolute;
+  display: block;
+  width: 20px;
+  height: 43px;
+  right: 10px;
+}
+.icon-right:before{
+	border: 2px solid #ccc;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -5px;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+.text-con .inp{
+	padding: 10px 0;
+}
+.text-con .inp label{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+.text-con .inp .inp-box{
+	height: 50px;
+	line-height: 50px;
+}
+.text-con .inp .inp-box em{
+	color: #4BB1DF;
+	font-size: 24px;
+}
+.text-con .inp-box input{
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 22px;
+}
+.choose{
+	background-color: #fff;
+	overflow: hidden;
+}
+.choose .usd,
+.choose .cny{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 15px;
+}
+.choose .usd{
+	border-right: 1px solid #ddd;
+}
+.choose .usd i{
+	background: url(../images/my.png) 0 0 no-repeat;
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+	display: block;
+	margin: 0 auto 10px;
+}
+.choose .cny i{
+	background: url(../images/rmb.png) 0 0 no-repeat;
+	background-size: 38px 38px;
+	width: 38px;
+	height: 38px;
+	display: block;
+	margin: 0 auto 10px;
+}
+.chongzhi-btn{
+	margin: 20px 15px;
+}
+.chongzhi-btn input{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #4BB1DF;
+	color: #fff;
+	font-size: 16px;
+}
+.sel-modal.change-modal{
+	height: 210px;
+}
+.sel-modal .change-detail{
+	height: 126px;
+	padding: 10px 0 10px 25px;
+	font-size: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.sel-modal .change-detail p{
+	line-height: 30px;
+}
+.sel-modal .change-detail .time{
+	color: #666;
+	font-size: 14px;
+}
+.sel-modal .change-detail .detail-num{
+	height: 45px;
+	line-height: 45px;
+	font-size: 13px;
+}
+.sel-modal .change-detail .detail-num .num{
+	font-size: 24px;
+}
+/*登录*/
+.logo-box{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid #4BB1DF;
+	margin: 50px auto 20px;
+	text-align: center;
+	padding: 13px 0;
+}
+.login-form{
+	margin: 0 15px;
+}
+.login-form .phone,
+.login-form .code{
+	border-bottom: 1px solid #4BB1DF;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.login-form .phone input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 5px;
+}
+.login-form .code input{
+	width: 70%;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+	padding-left: 5px;
+}
+.login-form .code button{
+	float: right;
+	width: 80px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #4BB1DF;
+	color: #4BB1DF;
+	background-color: #fff;
+	border-radius: 50px;
+	margin: 5px 0;
+}
+.login-form .link{
+	overflow: hidden;
+	font-size: 13px;
+	padding: 0 5px;
+}
+.login-form .link .reg{
+	color: #4BB1DF;
+}
+.login-form .link .forget{
+	float: right;
+	color: #666;
+}
+/*充值结果*/
+.res-modal.sel-modal{
+	height: 180px;
+	margin-top: -90px;
+}
+.res-box{
+	height: 135px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	text-align: center;
+}
+.res-box i.success{
+	background: url(../images/success.png) 0 0 no-repeat;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 30px auto 20px;
+}
+.res-box i.fail{
+	background: url(../images/fail.png) 0 0 no-repeat;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 30px auto 20px;
+}
+.res-box span{
+	font-size: 15px;
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>交易记录</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<header class="white">
+  <a href="###" class="a-back"></a>
+  <h2>交易记录</h2>
+</header>
+<div class="content">
+  <div class="search-box">
+    <i class="search-icon"></i>
+    <input type="text" placeholder="搜索">
+  </div>
+  <div class="month-box">
+    <h5>11月</h5>
+    <ul>
+      <li>
+        <i class="trade-icon change"></i>
+        <div class="trade-mid">
+          <p class="name">张三转入张三转入张三转入张三转入张三转入</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>+333333.05RMB</span>
+        </div>
+      </li>
+      <li>
+        <i class="trade-icon change"></i>
+        <div class="trade-mid">
+          <p class="name">张三转出</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>-5$</span>
+        </div>
+      </li>
+      <li>
+        <i class="trade-icon refill"></i>
+        <div class="trade-mid">
+          <p class="name">个人充值</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>-33.05RMB</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="month-box">
+    <h5>10月</h5>
+    <ul>
+      <li>
+        <i class="trade-icon change"></i>
+        <div class="trade-mid">
+          <p class="name">张三转入</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>+33.05RMB</span>
+        </div>
+      </li>
+      <li>
+        <i class="trade-icon change"></i>
+        <div class="trade-mid">
+          <p class="name">张三转出</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>-5$</span>
+        </div>
+      </li>
+      <li>
+        <i class="trade-icon refill"></i>
+        <div class="trade-mid">
+          <p class="name">个人充值</p>
+          <p class="time">11-23&nbsp;11:16</p>
+        </div>
+        <div class="trade-num">
+          <span>-33.05RMB</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+  $(".search-box input").focus(function(){
+    $(".search-icon").css("left","10px");
+    $(".search-icon").css("margin-left","0");
+    $(".search-box input").css("padding-left","30px");
+    $(".search-box input").css("text-align","left");
+  });
+});
+</script>
+</body>
+</html>

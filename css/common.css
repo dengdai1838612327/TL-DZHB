@@ -105,7 +105,6 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
 	width: 100%;
 	z-index: 8
 }
-
 .btmfixed {
 	left: 0;
 	position: fixed;
@@ -114,7 +113,7 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
 	z-index: 8
 }
 header {
-    background: #4BB1DF;
+	background: #4BB1DF;
 	padding: 0 10px;
 	height: 45px;
 	position: relative;
@@ -139,17 +138,50 @@ header h2 {
 	font-weight: 400;
 	height: 45px;
 }
-
-
 header .mx_a {
-    background: url(../images/1_r2_c7.png) no-repeat scroll center 10px / 13px 15px;
-    color: #fff;
-    display: block;
-    font-size: 11px;
-    height: 45px;
-    padding-top: 12px;
-    position: absolute;
-    right: 5px;
-    text-align: center;
-    width: 50px;
+	background: url(../images/1_r2_c7.png) no-repeat scroll center 8px / 13px 15px;
+	color: #fff;
+	display: block;
+	font-size: 11px;
+	height: 45px;
+	padding-top: 10px;
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	width: 50px;
+}
+header.white{
+	background-color: #fff;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+}
+header.white h2{
+	color: #333;
+}
+header .a-back{
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 45px;
+  left: 15px;
+}
+header .a-back:before{
+  border: 2px solid #fff;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -6px;
+  display: block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+header.white .a-back:before{
+	border: 2px solid #4BB1DF;
+	border-top: none;
+  border-right: none;
 }

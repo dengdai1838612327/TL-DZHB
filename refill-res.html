@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>联系人交易详情</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<header>
+  <a href="###" class="a-back"></a>
+  <h2>充值</h2>
+  <a href="###" class="mx_a">交易记录</a>
+</header>
+<div class="content">
+  <div class="record_detail">
+    <div class="record_head">
+      <h3>王五</h3>
+      <p>13756573799</p>
+    </div>
+    <div class="record_text">
+      <p>充值到账户</p>
+      <div class="text-con">
+        <div class="sel">
+          <label>选择银行卡</label>
+          <select>
+            <option>招商银行</option>
+            <option>交通银行</option>
+          </select>
+          <i class="icon-right"></i>
+        </div>
+        <div class="sel">
+          <label>选择币种</label>
+          <select class="blue">
+            <option>USD美元</option>
+            <option>CNY人民币</option>
+          </select>
+          <i class="icon-right"></i>
+        </div>
+        <div class="inp">
+          <label>输入金额</label>
+          <div class="inp-box">
+            <em>$</em>
+            <input type="text">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chongzhi-btn">
+    <input type="button" value="确认充值" onclick="return goods_sel();">
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="sel-modal res-modal" style="display: none;">
+  <!-- <div class="res-box">
+    <i class="success"></i>
+    <span>充值成功!</span>
+  </div> -->
+  <div class="res-box">
+    <i class="fail"></i>
+    <span>充值失败!</span>
+  </div>
+  <div class="sel-btn">
+    <input value="确定" class="btn" type="button">
+    <input value="取消" class="btn qx_btn" type="button">
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function goods_sel() {
+  var bggray = $("#bg-gray");
+  var modal = $(".sel-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}</script>
+</body>
+</html>
