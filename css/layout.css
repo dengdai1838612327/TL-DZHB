@@ -257,6 +257,7 @@
 	height: 14px;
 	background: url(../images/search-icon.png) 0 0 no-repeat;
 	background-size: 14px 14px;
+	transition: left .2s;
 }
 .search-box input{
 	width: 100%;
